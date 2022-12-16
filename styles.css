@@ -1,12 +1,138 @@
+@charset "UTF-8";
 @font-face {
   font-family: "PlusJakartaSans";
   src: url("assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 900;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "PlusJakartaSans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #5e6778;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+@media (min-width: 600px) {
+  body {
+    background-color: #e5effa;
+  }
+}
+
+main {
+  max-width: 345px;
+  background: white;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  main {
+    max-width: 735px;
+    padding: 0 25px 25px;
+    border-radius: 10px;
+  }
+}
+main .header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+main .header-section h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+@media (min-width: 600px) {
+  main .header-section h1 {
+    font-size: 1.4rem;
+  }
+}
+main .header-section h1 span {
+  color: white;
+  background: #0a317b;
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 4px;
+}
+@media (min-width: 600px) {
+  main .header-section a.mark-as-read {
+    font-size: 1.08rem;
+  }
+}
+main .header-section a.mark-as-read:hover {
+  color: #0a317b;
+}
+
+.notification {
+  display: flex;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+}
+.notification .user-image {
+  height: 35px;
+  margin-right: 10px;
+}
+.notification.unread {
+  background: #f7fafd;
+}
+.notification.unread .notification-content .content:after {
+  content: "●";
+  font-size: 0.6rem;
+  margin-left: 5px;
+  color: #f65351;
+}
+@media (min-width: 600px) {
+  .notification {
+    font-size: 1.08rem;
+  }
+}
+.notification .notification-content .content .user-name {
+  font-weight: 900;
+}
+.notification .notification-content .content a.post {
+  color: #5e6778;
+  font-weight: 900;
+}
+.notification .notification-content .content a.group {
+  color: #0a317b;
+  font-weight: 900;
+}
+.notification .notification-content .time {
+  color: #939dae;
+  margin-top: 2px;
+}
+.notification .notification-content .private-message {
+  padding: 15px 10px;
+  border: 1px solid #e5effa;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+@media (min-width: 600px) {
+  .notification .notification-content .private-message {
+    padding: 20px;
+  }
+}
+.notification .notification-image {
+  height: 35px;
+  margin-left: 15px;
+}
+@media (min-width: 600px) {
+  .notification .notification-image {
+    margin-left: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
