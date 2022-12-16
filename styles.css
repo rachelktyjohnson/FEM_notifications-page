@@ -106,6 +106,11 @@ main .header-section a.mark-as-read:hover {
   color: #5e6778;
   font-weight: 900;
 }
+@media (min-width: 600px) {
+  .notification .notification-content .content a.post:hover {
+    color: #0a317b;
+  }
+}
 .notification .notification-content .content a.group {
   color: #0a317b;
   font-weight: 900;
@@ -125,6 +130,10 @@ main .header-section a.mark-as-read:hover {
     padding: 20px;
   }
 }
+.notification .notification-content .private-message:hover {
+  background: #e5effa;
+  cursor: pointer;
+}
 .notification .notification-image {
   height: 35px;
   margin-left: 15px;
@@ -133,6 +142,10 @@ main .header-section a.mark-as-read:hover {
   .notification .notification-image {
     margin-left: auto;
   }
+}
+.notification .notification-image:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(94, 103, 120, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */
