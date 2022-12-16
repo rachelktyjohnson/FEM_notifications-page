@@ -2,42 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
     <title>Frontend Mentor | Notifications page</title>
 
 </head>
 <body>
+<main>
+    <div class="header-section">
+        <h1>Notifications <span>3</span></h1>
+        <a href="#" class="mark-as-read">Mark all as read</a>
+    </div>
 
-Notifications 3
+    <div class="notification unread">
+        <div class="notification-content">
+            <p class="content">Mark Webber reacted to your recent post <a href="#" class="post">My first tournament
+                today</a>!</p>
+            <p class="time">1m ago</p>
+        </div>
+    </div>
 
-Mark all as read
+    <div class="notification unread">
+        <div class="notification-content">
+            <p class="content">Angela Gray followed you</p>
+            <p class="time">5m ago</p>
+        </div>
+    </div>
 
-Mark Webber reacted to your recent post My first tournament today!
-1m ago
+    <div class="notification unread">
+        <div class="notification-content">
+            <p class="content">Jacob Thompson has joined your group <a href="#" class="group">Chess
+                Club</a></p>
+            <p class="time">1 day ago</p>
+        </div>
+    </div>
 
-Angela Gray followed you
-5m ago
+    <div class="notification">
+        <div class="notification-content">
+            <p class="content">Rizky Hasanuddin sent you a private message</p>
+            <p class="time">5 days ago</p>
+        </div>
+        <div class="private-message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
+            and I'm already having lots of fun and improving my game.
+        </div>
+    </div>
 
-Jacob Thompson has joined your group Chess Club
-1 day ago
+    <div class="notification">
+        <div class="notification-content">
+            <p class="content">Kimberly Smith commented on your picture</p>
+            <p class="time">1 week ago</p>
+        </div>
+        <img src="assets/images/image-chess.webp" alt="woman wearing red playing chess"/>
+    </div>
 
-Rizky Hasanuddin sent you a private message
-5 days ago
-Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-I'm already having lots of fun and improving my game.
+    <div class="notification">
+        <div class="notification-content">
+            <p class="content">Nathan Peterson reacted to your recent post <a href="#" class="post">5 end-game strategies to
+                increase your win rate</a></p>
+            <p class="time">2 weeks ago</p>
+        </div>
+    </div>
 
-Kimberly Smith commented on your picture
-1 week ago
-
-Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-2 weeks ago
-
-Anna Kim left the group Chess Club
-2 weeks ago
-
+    <div class="notification">
+        <div class="notification-content">
+            <p class="content">Anna Kim left the group <a href="#" class="group">Chess Club</a></p>
+            <p class="time">2 weeks ago</p>
+        </div>
+    </div>
+</main>
 
 <script src="script.js"></script>
 </body>
